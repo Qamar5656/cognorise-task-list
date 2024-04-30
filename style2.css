@@ -1,0 +1,48 @@
+
+body{
+    background-color: grey;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    ;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+.calculator {
+    width: 300px;
+    margin: 50px auto;
+    position: relative;
+    top: 15%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#display {
+    width: 96%;
+    border-radius: 12px;
+    border-color: transparent;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: xx-large;
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 27px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ccc;
+}
