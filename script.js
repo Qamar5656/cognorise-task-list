@@ -1,4 +1,4 @@
-//Declared variables
+//Declaration of variables
 let display = document.getElementById('display');
 let currentOperand = '';
 let previousOperand = '';
