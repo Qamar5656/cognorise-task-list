@@ -1,18 +1,4 @@
-
-// const display= document.getElementById('display');
-
-// function opertaion(input){
-// display.value += input;
-// }
-
-// function clearscreen(){
-// display.value= "";
-// }
-
-// function equal(){
-//     document.value= eval(display.value);
-// }
-
+//Declared variables
 let display = document.getElementById('display');
 let currentOperand = '';
 let previousOperand = '';
@@ -23,6 +9,7 @@ function appendNumber(number) {
     updateDisplay();
 }
 
+
 function setOperator(operator) {
     if (currentOperand === '') return;
     if (previousOperand !== '') {
@@ -32,6 +19,8 @@ function setOperator(operator) {
     previousOperand = currentOperand;
     currentOperand = '';
 }
+
+//Function that perform operations
 
 function calculate() {
     let computation;
@@ -59,14 +48,14 @@ function calculate() {
     previousOperand = '';
     updateDisplay();
 }
-
+// Funtion to clear screen
 function clearDisplay() {
     currentOperand = '';
     previousOperand = '';
     operation = undefined;
     updateDisplay();
 }
-
+//Function to display input entries value
 function updateDisplay() {
     display.value = currentOperand;
 }
